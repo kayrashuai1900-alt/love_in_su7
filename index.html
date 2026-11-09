@@ -99,7 +99,7 @@ body {
 #status-progress{bottom:calc(9% + env(safe-area-inset-bottom,0px));width:min(60vw,320px);accent-color:#e7b65c}
 #hy-loading{position:absolute;left:0;right:0;bottom:calc(9% + env(safe-area-inset-bottom,0px) + 28px);text-align:center;color:#f3dfc8;font:16px/1.4 "PingFang SC","Noto Sans SC",sans-serif;letter-spacing:.08em}
 </style>
-<meta name="hongyuan-build" content="a28a36f"></head>
+<meta name="hongyuan-build" content="1877fab"></head>
 	<body>
 		<canvas id="canvas">
 			Your browser does not support the canvas tag.
@@ -117,18 +117,18 @@ body {
 		</div>
 
 		<script>
-(function(){const f=window.fetch.bind(window),SIZES=[47185920, 47185920, 47185920, 47185920, 47185920, 12038992],TOTAL=247968592;
+(function(){const f=window.fetch.bind(window),SIZES=[47185920, 47185920, 47185920, 47185920, 47185920, 12083600],TOTAL=248013200;
 window.fetch=function(i,o){const u=typeof i==='string'?i:(i&&i.url)||'';
 if(!/index\.pck(\?|$)/.test(u))return f(i,o);
 let k=0,reader=null;
 const body=new ReadableStream({async pull(c){
-for(;;){if(!reader){if(k>=SIZES.length){c.close();return;}const r=await f('index.pck.'+k+'?v=a28a36f');if(!r.ok)throw new Error('pck '+k+' '+r.status);reader=r.body.getReader();}
+for(;;){if(!reader){if(k>=SIZES.length){c.close();return;}const r=await f('index.pck.'+k+'?v=1877fab');if(!r.ok)throw new Error('pck '+k+' '+r.status);reader=r.body.getReader();}
 const x=await reader.read();if(x.done){reader=null;k++;continue;}c.enqueue(x.value);return;}}});
 return Promise.resolve(new Response(body,{headers:{'Content-Type':'application/octet-stream','Content-Length':String(TOTAL)}}));};})();
 </script>
 <script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":false,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":247968592,"index.wasm":39509339},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":false,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":248013200,"index.wasm":39509339},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
